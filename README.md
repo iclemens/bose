@@ -10,7 +10,7 @@ The *python* directory contains some test code that attempts to interface with t
 Firmware update
 ---------------
 
-Data is sent using function 0x03 0x08 and operation 0x05 (start). 
+The (supposedly encrypted) firmware binary is sent as-is (including APPUHDR and APPUPFTR) to the device. Data is sent using function 0x03 0x08 and operation 0x05 (start). 
 
 [0x03, 0x08, 0x05, 0xff, 0x00, data...]
 
